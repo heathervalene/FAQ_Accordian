@@ -1,7 +1,7 @@
 /*cached elements*/
 
-const Question = document.querySelector('.question');
-const Answer = document.querySelector('.answer');
+const Question = document.querySelectorAll('.question');
+const Answer = document.querySelectorAll('.answer');
 
 /*event listener*/
 
