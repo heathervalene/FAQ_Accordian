@@ -15,9 +15,11 @@ background-image: url(/assets/images/background-pattern-desktop.svg);
     flex-direction: column;
     background-color: white;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: auto;
-    width: 50%;
+    width: 80%; 
+    max-width: 600px; 
+    padding: 20px; 
 
 }
 
@@ -55,14 +57,42 @@ background-image: url(/assets/images/background-pattern-desktop.svg);
     color: hsl(292, 16%, 49%)
 }
 
+.faq-item {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    
+    max-width: 600px; 
+ 
+    position: relative;
+}
+
+.question-wrapper {
+    flex: 1; 
+}
+
+.icon-wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100%);
+    right: 20px; 
+}
+
+
 .icon {
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-cursor: pointer;
+width: 25px;
+height: 25px;
+  cursor: pointer;
 transition: transform 0.3s;
 }
 
 .question.active .icon {
     transform: rotate(45deg);
+}
+
+.attribution {
+    color:white;
+    margin-bottom: 10px;
 }
